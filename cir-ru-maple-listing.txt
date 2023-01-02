@@ -27,7 +27,7 @@ cir:=proc(a)
     p2 := plot([x1, y1, t = t1 .. t2], color = red, legend = "эволюта эллипса"):
     X1 := evalf(eval(x1, t = a)):
     Y1 := evalf(eval(y1, t = a)):
-    K := evalf(eval(k, t = a));
+    K  := evalf(eval(k, t = a));
     p3 := plots:-pointplot([X1, Y1], color = sienna, symbol = solidcircle, symbolsize = 20):
     c1 := plottools:-circle([X1, Y1], 1/K, color = sienna, legend = "Соприкасающаяся окружность"):
     plots:-display([p1, p2, p3, c1], scaling = constrained);
